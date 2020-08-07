@@ -2,7 +2,7 @@ let data = 42;
 
 data = 10;
 
-interface ICar {
+export interface ICar {
   color: string;
   model: string;
   topSpeed?: number;
@@ -19,6 +19,8 @@ const car2: ICar = {
   topSpeed: 100,
 };
 
-const multiply = (x: number, y: number) => {
-  x * y;
-};
+// const multiply = (x: number, y: number) => {
+//   x * y;
+// };
+
+export const cars = [car1, car2];
